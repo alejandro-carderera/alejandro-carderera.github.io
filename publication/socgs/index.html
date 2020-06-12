@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Conditional gradients constitute a class of projection-free first-order algorithms for smooth convex optimization. As such, they are frequently used in solving smooth convex optimization problems over polytopes, for which the computational cost of orthogonal projections would be prohibitive. However, they do not enjoy the optimal convergence rates achieved by projection-based accelerated methods; moreover, achieving such globally-accelerated rates is information-theoretically impossible for these methods. To address this issue, we present Locally Accelerated Conditional Gradients -- an algorithmic framework that couples accelerated steps with conditional gradient steps to achieve local acceleration on smooth strongly convex problems. Our approach does not require projections onto the feasible set, but only on (typically low-dimensional) simplices, thus keeping the computational cost of projections at bay. Further, it achieves the optimal accelerated local convergence. Our theoretical results are supported by numerical experiments, which demonstrate significant speedups of our framework over state of the art methods in both per-iteration progress and wall-clock time.">
+  <meta name="description" content="Constrained second-order convex optimization algorithms are the method of choice when a high accuracy solution to a problem is needed, due to their local quadratic convergence. These algorithms require the solution of a constrained quadratic subproblem at every iteration. We present the Second-Order Conditional Gradient Sliding (SOCGS) algorithm, which uses a projection-free algorithm to solve the constrained quadratic subproblems inexactly. When the feasible region is a polytope the algorithm converges quadratically in primal gap after a finite number of linearly convergent iterations. Once in the quadratic regime the SOCGS algorithm requires $\mathcal{O}(\log(\log 1/\varepsilon))$ first-order and Hessian oracle calls and $\mathcal{O}(\log (1/\varepsilon) \log(\log1/\varepsilon))$ linear minimization oracle calls to achieve an $\varepsilon$-optimal solution. This algorithm is useful when the feasible region can only be accessed efficiently through a linear optimization oracle, and computing first-order information of the function, although possible, is costly.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/locally-accelerated-conditional-gradients/">
+  <link rel="alternate" hreflang="en-us" href="/publication/socgs/">
 
   
 
@@ -100,7 +100,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/locally-accelerated-conditional-gradients/">
+  <link rel="canonical" href="/publication/socgs/">
 
   
   
@@ -112,15 +112,15 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Alejandro Carderera">
-  <meta property="og:url" content="/publication/locally-accelerated-conditional-gradients/">
-  <meta property="og:title" content="Locally Accelerated Conditional Gradients - AISTATS 2020 | Alejandro Carderera">
-  <meta property="og:description" content="Conditional gradients constitute a class of projection-free first-order algorithms for smooth convex optimization. As such, they are frequently used in solving smooth convex optimization problems over polytopes, for which the computational cost of orthogonal projections would be prohibitive. However, they do not enjoy the optimal convergence rates achieved by projection-based accelerated methods; moreover, achieving such globally-accelerated rates is information-theoretically impossible for these methods. To address this issue, we present Locally Accelerated Conditional Gradients -- an algorithmic framework that couples accelerated steps with conditional gradient steps to achieve local acceleration on smooth strongly convex problems. Our approach does not require projections onto the feasible set, but only on (typically low-dimensional) simplices, thus keeping the computational cost of projections at bay. Further, it achieves the optimal accelerated local convergence. Our theoretical results are supported by numerical experiments, which demonstrate significant speedups of our framework over state of the art methods in both per-iteration progress and wall-clock time."><meta property="og:image" content="/publication/locally-accelerated-conditional-gradients/featured.png">
-  <meta property="twitter:image" content="/publication/locally-accelerated-conditional-gradients/featured.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="/publication/socgs/">
+  <meta property="og:title" content="Second-order Conditional Gradient Sliding - Preprint | Alejandro Carderera">
+  <meta property="og:description" content="Constrained second-order convex optimization algorithms are the method of choice when a high accuracy solution to a problem is needed, due to their local quadratic convergence. These algorithms require the solution of a constrained quadratic subproblem at every iteration. We present the Second-Order Conditional Gradient Sliding (SOCGS) algorithm, which uses a projection-free algorithm to solve the constrained quadratic subproblems inexactly. When the feasible region is a polytope the algorithm converges quadratically in primal gap after a finite number of linearly convergent iterations. Once in the quadratic regime the SOCGS algorithm requires $\mathcal{O}(\log(\log 1/\varepsilon))$ first-order and Hessian oracle calls and $\mathcal{O}(\log (1/\varepsilon) \log(\log1/\varepsilon))$ linear minimization oracle calls to achieve an $\varepsilon$-optimal solution. This algorithm is useful when the feasible region can only be accessed efficiently through a linear optimization oracle, and computing first-order information of the function, although possible, is costly."><meta property="og:image" content="/publication/socgs/featured.png">
+  <meta property="twitter:image" content="/publication/socgs/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-11-04T13:46:30-05:00">
+      <meta property="article:published_time" content="2020-02-20T13:46:30-05:00">
     
-    <meta property="article:modified_time" content="2019-06-19T13:46:30-05:00">
+    <meta property="article:modified_time" content="2020-02-20T13:46:30-05:00">
   
 
   
@@ -144,20 +144,20 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/publication/locally-accelerated-conditional-gradients/"
+    "@id": "/publication/socgs/"
   },
-  "headline": "Locally Accelerated Conditional Gradients - AISTATS 2020",
+  "headline": "Second-order Conditional Gradient Sliding - Preprint",
   
   "image": [
-    "/publication/locally-accelerated-conditional-gradients/featured.png"
+    "/publication/socgs/featured.png"
   ],
   
-  "datePublished": "2019-11-04T13:46:30-05:00",
-  "dateModified": "2019-06-19T13:46:30-05:00",
+  "datePublished": "2020-02-20T13:46:30-05:00",
+  "dateModified": "2020-02-20T13:46:30-05:00",
   
   "author": {
     "@type": "Person",
-    "name": "Jelena Diakonikolas"
+    "name": "Alejandro Carderera"
   },
   
   "publisher": {
@@ -168,7 +168,7 @@
       "url": "/img/icon-512.png"
     }
   },
-  "description": "Conditional gradients constitute a class of projection-free first-order algorithms for smooth convex optimization. As such, they are frequently used in solving smooth convex optimization problems over polytopes, for which the computational cost of orthogonal projections would be prohibitive. However, they do not enjoy the optimal convergence rates achieved by projection-based accelerated methods; moreover, achieving such globally-accelerated rates is information-theoretically impossible for these methods. To address this issue, we present Locally Accelerated Conditional Gradients -- an algorithmic framework that couples accelerated steps with conditional gradient steps to achieve local acceleration on smooth strongly convex problems. Our approach does not require projections onto the feasible set, but only on (typically low-dimensional) simplices, thus keeping the computational cost of projections at bay. Further, it achieves the optimal accelerated local convergence. Our theoretical results are supported by numerical experiments, which demonstrate significant speedups of our framework over state of the art methods in both per-iteration progress and wall-clock time."
+  "description": "Constrained second-order convex optimization algorithms are the method of choice when a high accuracy solution to a problem is needed, due to their local quadratic convergence. These algorithms require the solution of a constrained quadratic subproblem at every iteration. We present the Second-Order Conditional Gradient Sliding (SOCGS) algorithm, which uses a projection-free algorithm to solve the constrained quadratic subproblems inexactly. When the feasible region is a polytope the algorithm converges quadratically in primal gap after a finite number of linearly convergent iterations. Once in the quadratic regime the SOCGS algorithm requires $\\mathcal{O}(\\log(\\log 1/\\varepsilon))$ first-order and Hessian oracle calls and $\\mathcal{O}(\\log (1/\\varepsilon) \\log(\\log1/\\varepsilon))$ linear minimization oracle calls to achieve an $\\varepsilon$-optimal solution. This algorithm is useful when the feasible region can only be accessed efficiently through a linear optimization oracle, and computing first-order information of the function, although possible, is costly."
 }
 </script>
 
@@ -186,7 +186,7 @@
 
 
 
-  <title>Locally Accelerated Conditional Gradients - AISTATS 2020 | Alejandro Carderera</title>
+  <title>Second-order Conditional Gradient Sliding - Preprint | Alejandro Carderera</title>
 
 </head>
 
@@ -439,7 +439,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Locally Accelerated Conditional Gradients - AISTATS 2020</h1>
+  <h1>Second-order Conditional Gradient Sliding - Preprint</h1>
 
   
 
@@ -458,7 +458,7 @@
 
 
   
-  <span><a href="/authors/jelena-diakonikolas/">Jelena Diakonikolas</a></span>, <span><a href="/authors/alejandro-carderera/">Alejandro Carderera</a></span>, <span><a href="/authors/sebastian-pokutta/">Sebastian Pokutta</a></span>
+  <span><a href="/authors/alejandro-carderera/">Alejandro Carderera</a></span>, <span><a href="/authors/sebastian-pokutta/">Sebastian Pokutta</a></span>
 
   </div>
   
@@ -470,7 +470,7 @@
     
       
     
-    June 2019
+    February 2020
   </span>
   
 
@@ -513,88 +513,37 @@
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
   
-  
-  
-  
-  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/2002.08907.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
   
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1906.07867.pdf" target="_blank" rel="noopener">
-    <i class="ai ai-arxiv mr-1"></i>
-    PDF
-  </a>
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/alejandro-carderera/SOCGS" target="_blank" rel="noopener">
+  Code
+</a>
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/pokutta/lacg" target="_blank" rel="noopener">
-    <i class="fab fa-github mr-1"></i>
-    Code
-  </a>
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="http://www.pokutta.com/blog/research/2019/07/04/LaCG-abstract.html" target="_blank" rel="noopener">
-    <i class="fas fa-chalkboard-teacher mr-1"></i>
-    Blog Post
-  </a>
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/publication/locally-accelerated-conditional-gradients/MLOptPresentation.pdf" >
-    
-    Slides
-  </a>
+
+
+
+
+
+
+
+
+
 
 
 </div>
@@ -603,10 +552,10 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 640px; max-height: 544px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 640px; max-height: 480px;">
   <div style="position: relative">
-    <img src="/publication/locally-accelerated-conditional-gradients/featured.png" alt="" class="featured-image">
-    <span class="article-header-caption">Primal gap convergence comparison: Sparse coding over Birkhoff polytope. See paper for details.</span>
+    <img src="/publication/socgs/featured.png" alt="" class="featured-image">
+    <span class="article-header-caption">Primal gap convergence comparison: Minimization of quadratic over Birkhoff polytope. See paper for details.</span>
   </div>
 </div>
 
@@ -616,7 +565,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Conditional gradients constitute a class of projection-free first-order algorithms for smooth convex optimization. As such, they are frequently used in solving smooth convex optimization problems over polytopes, for which the computational cost of orthogonal projections would be prohibitive. However, they do not enjoy the optimal convergence rates achieved by projection-based accelerated methods; moreover, achieving such globally-accelerated rates is information-theoretically impossible for these methods. To address this issue, we present Locally Accelerated Conditional Gradients &ndash; an algorithmic framework that couples accelerated steps with conditional gradient steps to achieve local acceleration on smooth strongly convex problems. Our approach does not require projections onto the feasible set, but only on (typically low-dimensional) simplices, thus keeping the computational cost of projections at bay. Further, it achieves the optimal accelerated local convergence. Our theoretical results are supported by numerical experiments, which demonstrate significant speedups of our framework over state of the art methods in both per-iteration progress and wall-clock time.</p>
+    <p class="pub-abstract">Constrained second-order convex optimization algorithms are the method of choice when a high accuracy solution to a problem is needed, due to their local quadratic convergence. These algorithms require the solution of a constrained quadratic subproblem at every iteration. We present the Second-Order Conditional Gradient Sliding (SOCGS) algorithm, which uses a projection-free algorithm to solve the constrained quadratic subproblems inexactly. When the feasible region is a polytope the algorithm converges quadratically in primal gap after a finite number of linearly convergent iterations. Once in the quadratic regime the SOCGS algorithm requires $\mathcal{O}(\log(\log 1/\varepsilon))$ first-order and Hessian oracle calls and $\mathcal{O}(\log (1/\varepsilon) \log(\log1/\varepsilon))$ linear minimization oracle calls to achieve an $\varepsilon$-optimal solution. This algorithm is useful when the feasible region can only be accessed efficiently through a linear optimization oracle, and computing first-order information of the function, although possible, is costly.</p>
     
 
     
@@ -628,8 +577,8 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#3">
+              Preprint
             </a>
             
           </div>
@@ -646,7 +595,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">AISTATS 2020</div>
+          <div class="col-12 col-md-9">Preprint</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -696,7 +645,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="/authors/jelena-diakonikolas/"></a></h5>
+      <h5 class="card-title"><a href="/authors/alejandro-carderera/"></a></h5>
       
       
       <ul class="network-icon" aria-hidden="true">

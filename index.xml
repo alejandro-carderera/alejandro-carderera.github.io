@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Alejandro Carderera</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 14 Nov 2019 13:30:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 13:46:30 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Alejandro Carderera</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>Second-order Conditional Gradient Sliding - Preprint</title>
+      <link>/publication/socgs/</link>
+      <pubDate>Thu, 20 Feb 2020 13:46:30 -0500</pubDate>
+      <guid>/publication/socgs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</title>
       <link>/talk/mlopt2019/</link>
-      <pubDate>Thu, 14 Nov 2019 13:30:00 -0500</pubDate>
+      <pubDate>Sat, 14 Dec 2019 14:30:00 -0500</pubDate>
       <guid>/talk/mlopt2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Locally Accelerated Conditional Gradients</title>
+      <link>/talk/fields2019/</link>
+      <pubDate>Wed, 20 Nov 2019 13:30:00 -0500</pubDate>
+      <guid>/talk/fields2019/</guid>
       <description></description>
     </item>
     
@@ -29,7 +45,7 @@
     </item>
     
     <item>
-      <title>Locally Accelerated Conditional Gradients</title>
+      <title>Locally Accelerated Conditional Gradients - AISTATS 2020</title>
       <link>/publication/locally-accelerated-conditional-gradients/</link>
       <pubDate>Wed, 19 Jun 2019 13:46:30 -0500</pubDate>
       <guid>/publication/locally-accelerated-conditional-gradients/</guid>

@@ -5,7 +5,7 @@
     <link>/publication_types/3/</link>
       <atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Jun 2019 13:46:30 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 13:46:30 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>3</title>
@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Locally Accelerated Conditional Gradients</title>
-      <link>/publication/locally-accelerated-conditional-gradients/</link>
-      <pubDate>Wed, 19 Jun 2019 13:46:30 -0500</pubDate>
-      <guid>/publication/locally-accelerated-conditional-gradients/</guid>
+      <title>Second-order Conditional Gradient Sliding - Preprint</title>
+      <link>/publication/socgs/</link>
+      <pubDate>Thu, 20 Feb 2020 13:46:30 -0500</pubDate>
+      <guid>/publication/socgs/</guid>
       <description></description>
     </item>
     
