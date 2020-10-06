@@ -5,12 +5,20 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Dec 2019 14:30:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2020 13:00:00 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>/talk/</link>
     </image>
+    
+    <item>
+      <title>Locally Accelerated Conditional Gradients</title>
+      <link>/talk/aistats2020/</link>
+      <pubDate>Wed, 26 Aug 2020 13:00:00 -0500</pubDate>
+      <guid>/talk/aistats2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</title>

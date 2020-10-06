@@ -5,12 +5,20 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Alejandro Carderera</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 13:46:30 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2020 13:00:00 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Alejandro Carderera</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Locally Accelerated Conditional Gradients</title>
+      <link>/talk/aistats2020/</link>
+      <pubDate>Wed, 26 Aug 2020 13:00:00 -0500</pubDate>
+      <guid>/talk/aistats2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Second-order Conditional Gradient Sliding - Preprint</title>
@@ -49,6 +57,14 @@
       <link>/publication/locally-accelerated-conditional-gradients/</link>
       <pubDate>Wed, 19 Jun 2019 13:46:30 -0500</pubDate>
       <guid>/publication/locally-accelerated-conditional-gradients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</title>
+      <link>/publication/breaking-curse-dimensionality/</link>
+      <pubDate>Sun, 19 May 2019 13:46:30 -0500</pubDate>
+      <guid>/publication/breaking-curse-dimensionality/</guid>
       <description></description>
     </item>
     

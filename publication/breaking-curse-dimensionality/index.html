@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Ph.D. student in Machine Learning">
+  <meta name="description" content="Conditional gradient methods constitute a class of first order algorithms for solving smooth convex optimization problems that are projection-free and numerically competitive. We present the Locally Accelerated Conditional Gradients algorithmic framework that relaxes the projection-freeness requirement to only require projection onto (typically low-dimensional) simplices and mixes accelerated steps with conditional gradient steps to achieve dimensionindependent local acceleration for smooth strongly convex functions. We prove that the introduced class of methods attains the asymptotically optimal convergence rate. Our theoretical results are supported by numerical experiments that demonstrate a speed-up both in wall-clock time and in per-iteration progress when compared to state-of-the-art conditional gradient variants.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/authors/jelena-diakonikolas/">
+  <link rel="alternate" hreflang="en-us" href="/publication/breaking-curse-dimensionality/">
 
   
 
@@ -95,49 +95,98 @@
 
 
   
-  <link rel="alternate" href="/authors/jelena-diakonikolas/index.xml" type="application/rss+xml" title="Alejandro Carderera">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/authors/jelena-diakonikolas/">
+  <link rel="canonical" href="/publication/breaking-curse-dimensionality/">
 
   
   
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Alejandro Carderera">
-  <meta property="og:url" content="/authors/jelena-diakonikolas/">
-  <meta property="og:title" content="Jelena Diakonikolas | Alejandro Carderera">
-  <meta property="og:description" content="Ph.D. student in Machine Learning"><meta property="og:image" content="/img/icon-192.png">
-  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="/publication/breaking-curse-dimensionality/">
+  <meta property="og:title" content="Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients | Alejandro Carderera">
+  <meta property="og:description" content="Conditional gradient methods constitute a class of first order algorithms for solving smooth convex optimization problems that are projection-free and numerically competitive. We present the Locally Accelerated Conditional Gradients algorithmic framework that relaxes the projection-freeness requirement to only require projection onto (typically low-dimensional) simplices and mixes accelerated steps with conditional gradient steps to achieve dimensionindependent local acceleration for smooth strongly convex functions. We prove that the introduced class of methods attains the asymptotically optimal convergence rate. Our theoretical results are supported by numerical experiments that demonstrate a speed-up both in wall-clock time and in per-iteration progress when compared to state-of-the-art conditional gradient variants."><meta property="og:image" content="/publication/breaking-curse-dimensionality/featured.png">
+  <meta property="twitter:image" content="/publication/breaking-curse-dimensionality/featured.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2019-06-19T13:46:30-05:00">
+    
+      <meta property="article:published_time" content="2019-05-19T13:46:30-05:00">
+    
+    <meta property="article:modified_time" content="2019-05-19T13:46:30-05:00">
   
-
-  
-
-
-
 
   
 
 
+    
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/publication/breaking-curse-dimensionality/"
+  },
+  "headline": "Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients",
+  
+  "image": [
+    "/publication/breaking-curse-dimensionality/featured.png"
+  ],
+  
+  "datePublished": "2019-05-19T13:46:30-05:00",
+  "dateModified": "2019-05-19T13:46:30-05:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Jelena Diakonikolas"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alejandro Carderera",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "Conditional gradient methods constitute a class of first order algorithms for solving smooth convex optimization problems that are projection-free and numerically competitive. We present the Locally Accelerated Conditional Gradients algorithmic framework that relaxes the projection-freeness requirement to only require projection onto (typically low-dimensional) simplices and mixes accelerated steps with conditional gradient steps to achieve dimensionindependent local acceleration for smooth strongly convex functions. We prove that the introduced class of methods attains the asymptotically optimal convergence rate. Our theoretical results are supported by numerical experiments that demonstrate a speed-up both in wall-clock time and in per-iteration progress when compared to state-of-the-art conditional gradient variants."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
   
 
 
 
 
 
-  <title>Jelena Diakonikolas | Alejandro Carderera</title>
+  <title>Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients | Alejandro Carderera</title>
 
 </head>
 
@@ -362,38 +411,305 @@
 </nav>
 
 
+  <div class="pub">
+
   
 
-<div class="universal-wrapper pt-3">
-  <h1>Jelena Diakonikolas</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/jelena-diakonikolas/">Jelena Diakonikolas</a></span>, <span><a href="/authors/alejandro-carderera/">Alejandro Carderera</a></span>, <span><a href="/authors/sebastian-pokutta/">Sebastian Pokutta</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 2019
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://opt-ml.org/papers/2019/paper_26.pdf" target="_blank" rel="noopener">
+    <i class="fas fa-file-pdf mr-1"></i>
+    PDF
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/publication/breaking-curse-dimensionality/MLOptPresentation.pdf" >
+    <i class="fas fa-file mr-1"></i>
+    Slides
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/publication/breaking-curse-dimensionality/LaCG_MLOPT2019_v3.pdf" >
+    <i class="fas fa-file-powerpoint mr-1"></i>
+    Poster
+  </a>
+
+
 </div>
 
 
-<section id="profile-page" class="pt-5">
-  <div class="container">
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 640px; max-height: 527px;">
+  <div style="position: relative">
+    <img src="/publication/breaking-curse-dimensionality/featured.png" alt="" class="featured-image">
+    <span class="article-header-caption">Primal gap convergence comparison: Minimization of quadratic over the convex hull of MIPLIB polytope (ran14x18-disj-8). See paper for details.</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Conditional gradient methods constitute a class of first order algorithms for solving smooth convex optimization problems that are projection-free and numerically competitive. We present the Locally Accelerated Conditional Gradients algorithmic framework that relaxes the projection-freeness requirement to only require projection onto (typically low-dimensional) simplices and mixes accelerated steps with conditional gradient steps to achieve dimensionindependent local acceleration for smooth strongly convex functions. We prove that the introduced class of methods attains the asymptotically optimal convergence rate. Our theoretical results are supported by numerical experiments that demonstrate a speed-up both in wall-clock time and in per-iteration progress when compared to state-of-the-art conditional gradient variants.</p>
     
 
     
-    
-    
-    <div class="article-widget content-widget-hr">
-      <h3>Latest</h3>
-      <ul>
-        
-        <li>
-          <a href="/publication/locally-accelerated-conditional-gradients/">Locally Accelerated Conditional Gradients - AISTATS 2020</a>
-        </li>
-        
-        <li>
-          <a href="/publication/breaking-curse-dimensionality/">Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</a>
-        </li>
-        
-      </ul>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#9">
+              Workshop paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
     
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">OPT2019: 11th Annual Workshop on Optimization for Machine Learning</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/jelena-diakonikolas/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
   </div>
-</section>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</div>
 
       
 
