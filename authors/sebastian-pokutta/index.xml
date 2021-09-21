@@ -5,12 +5,44 @@
     <link>/authors/sebastian-pokutta/</link>
       <atom:link href="/authors/sebastian-pokutta/index.xml" rel="self" type="application/rss+xml" />
     <description>Sebastian Pokutta</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 13:46:30 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 13:46:30 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Sebastian Pokutta</title>
       <link>/authors/sebastian-pokutta/</link>
     </image>
+    
+    <item>
+      <title>Simple steps are all you need: Frank-Wolfe and generalized self-concordant functions - Under submission to NeurIPS&#39;21</title>
+      <link>/publication/fw-for-gsc-functions/</link>
+      <pubDate>Fri, 28 May 2021 13:46:30 -0500</pubDate>
+      <guid>/publication/fw-for-gsc-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FrankWolfe.jl - Under submission to the INFORMS Journal of Computing</title>
+      <link>/publication/frankwolfe/</link>
+      <pubDate>Wed, 14 Apr 2021 13:46:30 -0500</pubDate>
+      <guid>/publication/frankwolfe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parameter-Free Locally Accelerated Conditional Gradients - ICML 2021</title>
+      <link>/publication/parameter-free-locally-accelerated-conditional-gradients/</link>
+      <pubDate>Fri, 12 Feb 2021 13:46:30 -0500</pubDate>
+      <guid>/publication/parameter-free-locally-accelerated-conditional-gradients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CINDy: Conditional gradient-based Identification of Non-linear Dynamics - Preprint</title>
+      <link>/publication/cindy/</link>
+      <pubDate>Thu, 07 Jan 2021 13:46:30 -0500</pubDate>
+      <guid>/publication/cindy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Second-order Conditional Gradient Sliding - Preprint</title>

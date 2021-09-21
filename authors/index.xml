@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2020 13:46:30 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 13:46:30 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,24 +15,56 @@
     <item>
       <title>Alejandro Carderera</title>
       <link>/authors/alejandro-carderera/</link>
-      <pubDate>Thu, 20 Feb 2020 13:46:30 -0500</pubDate>
+      <pubDate>Fri, 28 May 2021 13:46:30 -0500</pubDate>
       <guid>/authors/alejandro-carderera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathieu Besançon</title>
+      <link>/authors/mathieu-besancon/</link>
+      <pubDate>Fri, 28 May 2021 13:46:30 -0500</pubDate>
+      <guid>/authors/mathieu-besancon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sebastian Pokutta</title>
       <link>/authors/sebastian-pokutta/</link>
-      <pubDate>Thu, 20 Feb 2020 13:46:30 -0500</pubDate>
+      <pubDate>Fri, 28 May 2021 13:46:30 -0500</pubDate>
       <guid>/authors/sebastian-pokutta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cheuk Yin Lin</title>
+      <link>/authors/cheuk-yin-lin/</link>
+      <pubDate>Fri, 12 Feb 2021 13:46:30 -0500</pubDate>
+      <guid>/authors/cheuk-yin-lin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jelena Diakonikolas</title>
       <link>/authors/jelena-diakonikolas/</link>
-      <pubDate>Wed, 19 Jun 2019 13:46:30 -0500</pubDate>
+      <pubDate>Fri, 12 Feb 2021 13:46:30 -0500</pubDate>
       <guid>/authors/jelena-diakonikolas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Christof Schütte</title>
+      <link>/authors/christof-schutte/</link>
+      <pubDate>Thu, 07 Jan 2021 13:46:30 -0500</pubDate>
+      <guid>/authors/christof-schutte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Martin Weiser</title>
+      <link>/authors/martin-weiser/</link>
+      <pubDate>Thu, 07 Jan 2021 13:46:30 -0500</pubDate>
+      <guid>/authors/martin-weiser/</guid>
       <description></description>
     </item>
     
@@ -41,7 +73,7 @@
       <link>/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;I am a third year Ph.D. student in Machine Learning at the Georgia Institute of Technology, working with &lt;a href=&#34;http://www.pokutta.com/&#34; target=&#34;_blank&#34;&gt;Prof. Sebastian Pokutta&lt;/a&gt;. My work is currently aimed at designing novel convex optimization algorithms with solid theoretical convergence guarantees and good numerical performance.&lt;/p&gt;
+      <description>&lt;p&gt;I am a fourth year Ph.D. student in Machine Learning at the Georgia Institute of Technology, working with &lt;a href=&#34;http://www.pokutta.com/&#34; target=&#34;_blank&#34;&gt;Prof. Sebastian Pokutta&lt;/a&gt;. My work is currently aimed at designing novel convex optimization algorithms with solid theoretical convergence guarantees and good numerical performance.&lt;/p&gt;
 
 &lt;p&gt;Prior to joining the Ph.D. program I worked at HP as an R&amp;amp;D Systems Engineer for two years. I obtained a bachelor of science in Industrial Engineering from the Universidad Politécnica de Madrid and a Master of Science in Applied Physics from Cornell University.&lt;/p&gt;
 </description>

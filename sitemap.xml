@@ -3,8 +3,98 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2020-08-26T13:00:00-05:00</lastmod>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/alejandro-carderera/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/mathieu-besancon/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sebastian-pokutta/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/fw-for-gsc-functions/</loc>
+    <lastmod>2021-05-28T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/4/</loc>
+    <lastmod>2021-04-14T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/frankwolfe/</loc>
+    <lastmod>2021-04-14T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/cheuk-yin-lin/</loc>
+    <lastmod>2021-02-12T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/jelena-diakonikolas/</loc>
+    <lastmod>2021-02-12T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/parameter-free-locally-accelerated-conditional-gradients/</loc>
+    <lastmod>2021-02-12T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/christof-schutte/</loc>
+    <lastmod>2021-01-07T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/cindy/</loc>
+    <lastmod>2021-01-07T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/martin-weiser/</loc>
+    <lastmod>2021-01-07T13:46:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/informs2020/</loc>
+    <lastmod>2020-11-11T13:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-11-11T13:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -13,37 +103,7 @@
   </url>
   
   <url>
-    <loc>/talk/</loc>
-    <lastmod>2020-08-26T13:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication_types/3/</loc>
-    <lastmod>2020-02-20T13:46:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/alejandro-carderera/</loc>
-    <lastmod>2020-02-20T13:46:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-02-20T13:46:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-02-20T13:46:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2020-02-20T13:46:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/sebastian-pokutta/</loc>
     <lastmod>2020-02-20T13:46:30-05:00</lastmod>
   </url>
   
@@ -65,16 +125,6 @@
   <url>
     <loc>/talk/riken2019/</loc>
     <lastmod>2019-07-29T13:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2019-06-19T13:46:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/jelena-diakonikolas/</loc>
-    <lastmod>2019-06-19T13:46:30-05:00</lastmod>
   </url>
   
   <url>

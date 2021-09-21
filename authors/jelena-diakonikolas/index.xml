@@ -5,12 +5,20 @@
     <link>/authors/jelena-diakonikolas/</link>
       <atom:link href="/authors/jelena-diakonikolas/index.xml" rel="self" type="application/rss+xml" />
     <description>Jelena Diakonikolas</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Jun 2019 13:46:30 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Feb 2021 13:46:30 -0500</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Jelena Diakonikolas</title>
       <link>/authors/jelena-diakonikolas/</link>
     </image>
+    
+    <item>
+      <title>Parameter-Free Locally Accelerated Conditional Gradients - ICML 2021</title>
+      <link>/publication/parameter-free-locally-accelerated-conditional-gradients/</link>
+      <pubDate>Fri, 12 Feb 2021 13:46:30 -0500</pubDate>
+      <guid>/publication/parameter-free-locally-accelerated-conditional-gradients/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Locally Accelerated Conditional Gradients - AISTATS 2020</title>
