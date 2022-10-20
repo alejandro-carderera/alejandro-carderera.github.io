@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Ph.D. student in Machine Learning">
+  <meta name="description" content="Quantitative Researcher">
 
   
   <link rel="alternate" hreflang="en-us" href="/authors/mathieu-besancon/">
@@ -91,6 +91,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y38TFHGMS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-Y38TFHGMS1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -117,7 +153,7 @@
   <meta property="og:site_name" content="Alejandro Carderera">
   <meta property="og:url" content="/authors/mathieu-besancon/">
   <meta property="og:title" content="Mathieu Besançon | Alejandro Carderera">
-  <meta property="og:description" content="Ph.D. student in Machine Learning"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Quantitative Researcher"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2021-05-28T13:46:30-05:00">
@@ -248,65 +284,36 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
         </li>
 
         
@@ -382,11 +389,11 @@
       <ul>
         
         <li>
-          <a href="/publication/fw-for-gsc-functions/">Simple steps are all you need: Frank-Wolfe and generalized self-concordant functions - To appear in NeurIPS&#39;21</a>
+          <a href="/publication/fw-for-gsc-functions/">Simple steps are all you need: Frank-Wolfe and generalized self-concordant functions - NeurIPS&#39;21</a>
         </li>
         
         <li>
-          <a href="/publication/frankwolfe/">FrankWolfe.jl - Under submission to the INFORMS Journal of Computing</a>
+          <a href="/publication/frankwolfe/">FrankWolfe.jl - INFORMS Journal of Computing</a>
         </li>
         
       </ul>

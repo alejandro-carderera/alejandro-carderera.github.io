@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Ph.D. student in Machine Learning">
+  <meta name="description" content="Quantitative Researcher">
 
   
   <link rel="alternate" hreflang="en-us" href="/authors/admin/">
@@ -91,6 +91,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y38TFHGMS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-Y38TFHGMS1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -117,7 +153,7 @@
   <meta property="og:site_name" content="Alejandro Carderera">
   <meta property="og:url" content="/authors/admin/">
   <meta property="og:title" content=" | Alejandro Carderera">
-  <meta property="og:description" content="Ph.D. student in Machine Learning"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Quantitative Researcher"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
@@ -248,65 +284,36 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
         </li>
 
         
@@ -398,12 +405,12 @@
 
       <div class="portrait-title">
         <h2>Alejandro Carderera</h2>
-        <h3>Ph.D. student in Machine Learning</h3>
+        <h3>Quantitative Researcher</h3>
 
         
         <h3>
           
-          <span>Georgia Institute of Technology</span>
+          <span>Quantfury</span>
           
         </h3>
         
@@ -516,7 +523,7 @@
     
     
 
-    <p>I am a fourth year Ph.D. student in Machine Learning at the Georgia Institute of Technology, working with <a href="http://www.pokutta.com/" target="_blank">Prof. Sebastian Pokutta</a>. My work is currently aimed at designing novel convex optimization algorithms with solid theoretical convergence guarantees and good numerical performance.</p>
+    <p>I am a Quantitative Researcher at Quantfury, working in Machine Learning techniques for algorithmic trading. I obtained my Ph.D. in Machine Learning at the Georgia Institute of Technology, working with <a href="http://www.pokutta.com/" target="_blank">Prof. Sebastian Pokutta</a>, on designing novel convex optimization algorithms with solid theoretical convergence guarantees and good numerical performance.</p>
 
 <p>Prior to joining the Ph.D. program I worked at HP as an R&amp;D Systems Engineer for two years. I obtained a bachelor of science in Industrial Engineering from the Universidad Politécnica de Madrid and a Master of Science in Applied Physics from Cornell University.</p>
 
@@ -548,7 +555,7 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">Ph.D. in Machine Learning, 2021 (Expected)</p>
+              <p class="course">Ph.D. in Machine Learning, 2021</p>
               <p class="institution">Georgia Institute of Technology</p>
             </div>
           </li>

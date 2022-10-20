@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Ph.D. student in Machine Learning">
+  <meta name="description" content="Quantitative Researcher">
 
   
   <link rel="alternate" hreflang="en-us" href="/">
@@ -91,6 +91,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y38TFHGMS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-Y38TFHGMS1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -117,7 +153,7 @@
   <meta property="og:site_name" content="Alejandro Carderera">
   <meta property="og:url" content="/">
   <meta property="og:title" content="Alejandro Carderera">
-  <meta property="og:description" content="Ph.D. student in Machine Learning"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Quantitative Researcher"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2021-05-28T13:46:30-05:00">
@@ -262,65 +298,36 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks" data-target="#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
         </li>
 
         
@@ -459,12 +466,12 @@
 
       <div class="portrait-title">
         <h2>Alejandro Carderera</h2>
-        <h3>Ph.D. student in Machine Learning</h3>
+        <h3>Quantitative Researcher</h3>
 
         
         <h3>
           
-          <span>Georgia Institute of Technology</span>
+          <span>Quantfury</span>
           
         </h3>
         
@@ -577,7 +584,7 @@
     
     <h1>Biography</h1>
 
-    <p>I am a fourth year Ph.D. student in Machine Learning at the Georgia Institute of Technology, working with <a href="http://www.pokutta.com/" target="_blank">Prof. Sebastian Pokutta</a>. My work is currently aimed at designing novel convex optimization algorithms with solid theoretical convergence guarantees and good numerical performance.</p>
+    <p>I am a Quantitative Researcher at Quantfury, working in Machine Learning techniques for algorithmic trading. I obtained my Ph.D. in Machine Learning at the Georgia Institute of Technology, working with <a href="http://www.pokutta.com/" target="_blank">Prof. Sebastian Pokutta</a>, on designing novel convex optimization algorithms with solid theoretical convergence guarantees and good numerical performance.</p>
 
 <p>Prior to joining the Ph.D. program I worked at HP as an R&amp;D Systems Engineer for two years. I obtained a bachelor of science in Industrial Engineering from the Universidad Politécnica de Madrid and a Master of Science in Applied Physics from Cornell University.</p>
 
@@ -609,7 +616,7 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">Ph.D. in Machine Learning, 2021 (Expected)</p>
+              <p class="course">Ph.D. in Machine Learning, 2021</p>
               <p class="institution">Georgia Institute of Technology</p>
             </div>
           </li>
@@ -635,6 +642,282 @@
       
 
     </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="experience" class="home-section wg-experience   "  >
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Experience</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Quantitative Researcher - ML for algorithmic trading</h4>
+            <h4 class="card-title exp-company text-muted my-0">Quantfury</h4>
+            <div class="text-muted exp-meta">
+              Jan 2022 –
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>Atlanta, USA.</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Quantitative Researcher - Summer Associate</h4>
+            <h4 class="card-title exp-company text-muted my-0">J.P. Morgan</h4>
+            <div class="text-muted exp-meta">
+              Jun 2021 –
+              
+                Aug 2021
+              
+              
+                <span class="middot-divider"></span>
+                <span>New York, USA.</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Quantitative Researcher - Summer Associate</h4>
+            <h4 class="card-title exp-company text-muted my-0">J.P. Morgan</h4>
+            <div class="text-muted exp-meta">
+              Jul 2020 –
+              
+                Aug 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>New York, USA.</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0">Georgia Institute of Technology</h4>
+            <div class="text-muted exp-meta">
+              Aug 2018 –
+              
+                Dec 2021
+              
+              
+                <span class="middot-divider"></span>
+                <span>Atlanta, USA.</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">R&amp;D Systems Engineer</h4>
+            <h4 class="card-title exp-company text-muted my-0">HP</h4>
+            <div class="text-muted exp-meta">
+              Aug 2016 –
+              
+                Jul 2018
+              
+              
+                <span class="middot-divider"></span>
+                <span>Barcelona, Spain</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0">Cornell University</h4>
+            <div class="text-muted exp-meta">
+              Jul 2015 –
+              
+                Jul 2016
+              
+              
+                <span class="middot-divider"></span>
+                <span>Ithaca, USA.</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
   </div>
 </div>
 
@@ -749,7 +1032,7 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/fw-for-gsc-functions/" >Simple steps are all you need: Frank-Wolfe and generalized self-concordant functions - To appear in NeurIPS&#39;21</a>
+      <a href="/publication/fw-for-gsc-functions/" >Simple steps are all you need: Frank-Wolfe and generalized self-concordant functions - NeurIPS&#39;21</a>
     </h3>
 
     
@@ -915,7 +1198,7 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/frankwolfe/" >FrankWolfe.jl - Under submission to the INFORMS Journal of Computing</a>
+      <a href="/publication/frankwolfe/" >FrankWolfe.jl - INFORMS Journal of Computing</a>
     </h3>
 
     
@@ -1473,106 +1756,6 @@
 
       
     
-
-    
-    <div class="see-all">
-      <a href="/publication/">
-        See all publications
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="talks" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent &amp; Upcoming Talks</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
       
         
 
@@ -1589,31 +1772,37 @@
 
 
 
+
+  
 
 
 <div class="media stream-item">
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/informs2020/" >Projection-Free First Order Optimization</a>
+      <a href="/publication/locally-accelerated-conditional-gradients/" >Locally Accelerated Conditional Gradients - AISTATS 2020</a>
     </h3>
 
+    
+    <div class="article-style">
+      Conditional gradients constitute a class of projection-free first-order algorithms for smooth convex optimization. As such, they are …
+    </div>
     
 
     <div class="stream-meta article-metadata">
 
       
-      <div>
-        <span>
-          Nov 11, 2020 1:00 PM &mdash; 1:20 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>INFORMS2020 (Online)</span>
-        
-      </div>
-      
 
+      
+      <div>
+        
+
+
+
+  
+  <span><a href="/authors/jelena-diakonikolas/">Jelena Diakonikolas</a></span>, <span><a href="/authors/alejandro-carderera/">Alejandro Carderera</a></span>, <span><a href="/authors/sebastian-pokutta/">Sebastian Pokutta</a></span>
+
+      </div>
       
     </div>
 
@@ -1657,11 +1846,73 @@
   
   
     
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://slideslive.com/38930107/locally-accelerated-conditional-gradients?ref=account-folder-52123-folders" target="_blank" rel="noopener">
+    <i class="fas fa-video mr-1"></i>
+    Video
+  </a>
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/1906.07867.pdf" target="_blank" rel="noopener">
+    <i class="ai ai-arxiv mr-1"></i>
+    PDF
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/pokutta/lacg" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    Code
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.pokutta.com/blog/research/2019/07/04/LaCG-abstract.html" target="_blank" rel="noopener">
+    <i class="fas fa-chalkboard-teacher mr-1"></i>
+    Blog Post
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
     
       
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/talk/informs2020/INFORMSPresentation.pdf" >
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/locally-accelerated-conditional-gradients/AISTATSPresentation.pdf" >
     <i class="fas fa-file mr-1"></i>
     Slides
   </a>
@@ -1673,6 +1924,11 @@
   </div>
   <div class="ml-3">
     
+    
+    
+    <a href="/publication/locally-accelerated-conditional-gradients/" >
+      <img src="/publication/locally-accelerated-conditional-gradients/featured_hu8f7dc7597f1a074d548329fbe0849e15_46651_150x0_resize_lanczos_2.png" alt="">
+    </a>
     
   </div>
 </div>
@@ -1696,136 +1952,36 @@
 
 
 
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/aistats2020/" >Locally Accelerated Conditional Gradients</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Aug 26, 2020 1:00 PM &mdash; 1:20 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>AISTATS2020 (Online)</span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/talk/aistats2020/AISTATSPresentation.pdf" >
-    <i class="fas fa-file mr-1"></i>
-    Slides
-  </a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
 
 
 <div class="media stream-item">
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/mlopt2019/" >Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</a>
+      <a href="/publication/breaking-curse-dimensionality/" >Breaking the Curse of Dimensionality (Locally) to Accelerate Conditional Gradients</a>
     </h3>
 
+    
+    <div class="article-style">
+      Conditional gradient methods constitute a class of first order algorithms for solving smooth convex optimization problems that are …
+    </div>
     
 
     <div class="stream-meta article-metadata">
 
       
-      <div>
-        <span>
-          Dec 14, 2019 2:30 PM &mdash; 2:45 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>OPT2019: 11th Workshop on Optimization for Machine Learning</span>
-        
-      </div>
-      
 
+      
+      <div>
+        
+
+
+
+  
+  <span><a href="/authors/jelena-diakonikolas/">Jelena Diakonikolas</a></span>, <span><a href="/authors/alejandro-carderera/">Alejandro Carderera</a></span>, <span><a href="/authors/sebastian-pokutta/">Sebastian Pokutta</a></span>
+
+      </div>
       
     </div>
 
@@ -1871,7 +2027,7 @@
     
   
   <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://opt-ml.org/papers/2019/paper_26.pdf" target="_blank" rel="noopener">
-    <i class="fas fa-file mr-1"></i>
+    <i class="fas fa-file-pdf mr-1"></i>
     PDF
   </a>
 
@@ -1889,9 +2045,28 @@
       
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/talk/mlopt2019/MLOptPresentation.pdf" >
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/breaking-curse-dimensionality/MLOptPresentation.pdf" >
     <i class="fas fa-file mr-1"></i>
     Slides
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/breaking-curse-dimensionality/LaCG_MLOPT2019_v3.pdf" >
+    <i class="fas fa-file-powerpoint mr-1"></i>
+    Poster
   </a>
 
 
@@ -1902,214 +2077,10 @@
   <div class="ml-3">
     
     
-  </div>
-</div>
-
-      
     
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/fields2019/" >Locally Accelerated Conditional Gradients</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Nov 20, 2019 1:30 PM &mdash; 2:00 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>Fields CQAM Focus Program on Data Science and Optimization</span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/talk/fields2019/FieldsInstitute2019.pdf" >
-    <i class="fas fa-file mr-1"></i>
-    Slides
-  </a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/riken2019/" >Locally Accelerated Conditional Gradients</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Jul 29, 2019 1:00 PM &mdash; 1:20 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>2nd Conference on Discrete Optimization and Machine Learning</span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.cas.mcmaster.ca/~deza/slidesRIKEN2019/carderera.pdf" target="_blank" rel="noopener">
-    <i class="fas fa-file mr-1"></i>
-    Slides
-  </a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
+    <a href="/publication/breaking-curse-dimensionality/" >
+      <img src="/publication/breaking-curse-dimensionality/featured_hudce816a3b9f242dcc6cc8d47350ec769_52572_150x0_resize_lanczos_2.png" alt="">
+    </a>
     
   </div>
 </div>
@@ -2119,245 +2090,6 @@
 
     
 
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="experience" class="home-section wg-experience   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Experience</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Quantitative Researcher - Summer Associate</h4>
-            <h4 class="card-title exp-company text-muted my-0">J.P. Morgan</h4>
-            <div class="text-muted exp-meta">
-              Jun 2021 –
-              
-                Aug 2021
-              
-              
-                <span class="middot-divider"></span>
-                <span>New York, USA.</span>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Quantitative Researcher - Summer Associate</h4>
-            <h4 class="card-title exp-company text-muted my-0">J.P. Morgan</h4>
-            <div class="text-muted exp-meta">
-              Jul 2020 –
-              
-                Aug 2020
-              
-              
-                <span class="middot-divider"></span>
-                <span>New York, USA.</span>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
-            <h4 class="card-title exp-company text-muted my-0">Georgia Institute of Technology</h4>
-            <div class="text-muted exp-meta">
-              Aug 2018 –
-              
-                Dec 2021
-              
-              
-                <span class="middot-divider"></span>
-                <span>Atlanta, USA.</span>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">R&amp;D Systems Engineer</h4>
-            <h4 class="card-title exp-company text-muted my-0">HP</h4>
-            <div class="text-muted exp-meta">
-              Aug 2016 –
-              
-                Jul 2018
-              
-              
-                <span class="middot-divider"></span>
-                <span>Barcelona, Spain</span>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
-            <h4 class="card-title exp-company text-muted my-0">Cornell University</h4>
-            <div class="text-muted exp-meta">
-              Jul 2015 –
-              
-                Jul 2016
-              
-              
-                <span class="middot-divider"></span>
-                <span>Ithaca, USA.</span>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
   </div>
 </div>
 

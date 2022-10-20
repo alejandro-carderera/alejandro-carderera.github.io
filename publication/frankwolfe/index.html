@@ -91,6 +91,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y38TFHGMS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-Y38TFHGMS1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -113,7 +149,7 @@
   
   <meta property="og:site_name" content="Alejandro Carderera">
   <meta property="og:url" content="/publication/frankwolfe/">
-  <meta property="og:title" content="FrankWolfe.jl - Under submission to the INFORMS Journal of Computing | Alejandro Carderera">
+  <meta property="og:title" content="FrankWolfe.jl - INFORMS Journal of Computing | Alejandro Carderera">
   <meta property="og:description" content="We present FrankWolfe.jl, an open-source implementation of several popular Frank-Wolfe and Conditional Gradients variants for first-order constrained optimization. The package is designed with flexibility and high-performance in mind, allowing for easy extension and relying on few assumptions regarding the user-provided functions. It supports Julia&#39;s unique multiple dispatch feature, and interfaces smoothly with generic linear optimization formulations using MathOptInterface.jl."><meta property="og:image" content="/publication/frankwolfe/featured.png">
   <meta property="twitter:image" content="/publication/frankwolfe/featured.png"><meta property="og:locale" content="en-us">
   
@@ -146,7 +182,7 @@
     "@type": "WebPage",
     "@id": "/publication/frankwolfe/"
   },
-  "headline": "FrankWolfe.jl - Under submission to the INFORMS Journal of Computing",
+  "headline": "FrankWolfe.jl - INFORMS Journal of Computing",
   
   "image": [
     "/publication/frankwolfe/featured.png"
@@ -186,7 +222,7 @@
 
 
 
-  <title>FrankWolfe.jl - Under submission to the INFORMS Journal of Computing | Alejandro Carderera</title>
+  <title>FrankWolfe.jl - INFORMS Journal of Computing | Alejandro Carderera</title>
 
 </head>
 
@@ -297,65 +333,36 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
         </li>
 
         
@@ -441,7 +448,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>FrankWolfe.jl - Under submission to the INFORMS Journal of Computing</h1>
+  <h1>FrankWolfe.jl - INFORMS Journal of Computing</h1>
 
   
 
@@ -613,7 +620,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Under submission to the INFORMS Journal of Computing</div>
+          <div class="col-12 col-md-9">INFORMS Journal of Computing</div>
         </div>
       </div>
       <div class="col-md-1"></div>
