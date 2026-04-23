@@ -14,7 +14,7 @@
           <br>
           <span class="text-muted">{{ exp.company }}{% if exp.location != "" and exp.location != nil %} · {{ exp.location }}{% endif %}</span>
         </div>
-        <div class="text-muted text-sm-right mt-1 mt-sm-0" style="white-space: nowrap;">
+        <div class="text-muted text-sm-right mt-1 mt-sm-0" style="white-space: nowrap; font-variant-numeric: tabular-nums;">
           {% if exp.date_display %}{{ exp.date_display }}{% else %}{{ exp.start_date | date: '%Y' }}–{% if exp.end_date == "" or exp.end_date == nil %}Present{% else %}{{ exp.end_date | date: '%Y' }}{% endif %}{% endif %}
         </div>
       </div>
