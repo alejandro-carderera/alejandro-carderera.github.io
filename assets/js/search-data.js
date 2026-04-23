@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "Open-source software for convex optimization and machine learning.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "news-paper-locally-accelerated-conditional-gradients-accepted-at-aistats-2020",
           title: 'Paper “Locally Accelerated Conditional Gradients” accepted at AISTATS 2020.',
           description: "",
@@ -61,22 +54,7 @@ ninja.data = [{
           section: "News",},{id: "news-promoted-to-staff-applied-researcher-at-github-copilot",
           title: 'Promoted to Staff Applied Researcher at GitHub Copilot.',
           description: "",
-          section: "News",},{id: "projects-cindy",
-          title: 'CINDy',
-          description: "Conditional Gradient-based Identification of Non-linear Dynamics from data.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/cindy/";
-            },},{id: "projects-frankwolfe-jl",
-          title: 'FrankWolfe.jl',
-          description: "A high-performance and flexible toolbox for Frank-Wolfe algorithms and Conditional Gradients in Julia.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/frankwolfe_jl/";
-            },},{id: "projects-socgs",
-          title: 'SOCGS',
-          description: "Second-Order Conditional Gradient Sliding for constrained optimization with quadratic convergence.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/socgs/";
-            },},{
+          section: "News",},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
