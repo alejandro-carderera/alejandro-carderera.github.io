@@ -22,10 +22,7 @@ document.addEventListener("readystatechange", () => {
         // if jsonData.layout exists, then update the theme
         if (jsonData.layout) {
           if (jsonData.layout.template) {
-            jsonData.layout.template = {
-              ...plotlyDarkLayout,
-              ...jsonData.layout.template,
-            };
+            jsonData.layout.template = { ...plotlyDarkLayout, ...jsonData.layout.template };
           } else {
             jsonData.layout.template = plotlyDarkLayout;
           }
@@ -40,10 +37,7 @@ document.addEventListener("readystatechange", () => {
         // if jsonData.layout exists, then update the theme
         if (jsonData.layout) {
           if (jsonData.layout.template) {
-            jsonData.layout.template = {
-              ...plotlyLightLayout,
-              ...jsonData.layout.template,
-            };
+            jsonData.layout.template = { ...plotlyLightLayout, ...jsonData.layout.template };
           } else {
             jsonData.layout.template = plotlyLightLayout;
           }

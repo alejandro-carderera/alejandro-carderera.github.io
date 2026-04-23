@@ -1,7 +1,7 @@
 // base icon class definition
 // -------------------------
-@use "variables" as v;
-@use "mixins" as m;
+@use 'variables' as v;
+@use 'mixins' as m;
 
 .#{v.$css-prefix}-solid,
 .#{v.$css-prefix}-regular,
@@ -25,5 +25,5 @@
   .fa
 )::before {
   content: var(#{v.$icon-property});
-  content: var(#{v.$icon-property}) / "";
+  content: var(#{v.$icon-property})/"";
 }
