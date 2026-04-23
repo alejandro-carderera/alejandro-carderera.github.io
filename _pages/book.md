@@ -17,7 +17,7 @@ nav_order: 3
   <div>
     <p style="color: var(--global-text-color-light); margin-bottom: 0.25rem; font-size: 0.9rem;">MOS-SIAM Series on Optimization · 2025</p>
     <p style="margin-bottom: 0.75rem;">
-      <a href="https://www.pokutta.com/">G. Braun</a>,
+      <a href="https://iol.zib.de/team/gabor-braun.html">G. Braun</a>,
       <strong>A. Carderera</strong>,
       <a href="https://cyrillewcombettes.github.io/">C.W. Combettes</a>,
       <a href="https://www.seas.upenn.edu/~hassani/">H. Hassani</a>,

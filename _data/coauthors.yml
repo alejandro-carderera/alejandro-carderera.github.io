@@ -8,6 +8,7 @@
 
 "braun":
   - firstname: ["Gábor", "G."]
+    url: https://iol.zib.de/team/gabor-braun.html
 
 "besancon":
   - firstname: ["Mathieu", "M."]
@@ -31,9 +32,11 @@
 
 "schutte":
   - firstname: ["Christof", "Ch."]
+    url: https://www.zib.de/members/schuette
 
 "weiser":
   - firstname: ["Martin", "M."]
+    url: https://www.zib.de/userpage/weiser/
 
 "lin":
   - firstname: ["Cheuk Yin", "C. Y."]
