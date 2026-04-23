@@ -1,59 +1,59 @@
 // variables
 // --------------------------
 
-$css-prefix            : fa !default;
-$style                 : 900 !default;
-$family                : "Font Awesome 7 Free" !default;
+$css-prefix: fa !default;
+$style: 900 !default;
+$family: "Font Awesome 7 Free" !default;
 
-$icon-property         : --fa !default;
+$icon-property: --fa !default;
 
-$display               : inline-block !default;
+$display: inline-block !default;
 
-$fw-width              : calc((20/16) * 1em) !default;
-$inverse               : #fff !default;
+$fw-width: calc((20 / 16) * 1em) !default;
+$inverse: #fff !default;
 
-$border-box-sizing     : content-box !default;
-$border-color          : #eee !default;
-$border-padding        : 0.1875em 0.25em !default;
-$border-radius         : .1em !default;
-$border-style          : solid !default;
-$border-width          : .0625em !default;
+$border-box-sizing: content-box !default;
+$border-color: #eee !default;
+$border-padding: 0.1875em 0.25em !default;
+$border-radius: 0.1em !default;
+$border-style: solid !default;
+$border-width: 0.0625em !default;
 
-$size-scale-2xs        : 10 !default;
-$size-scale-xs         : 12 !default;
-$size-scale-sm         : 14 !default;
-$size-scale-base       : 16 !default;
-$size-scale-lg         : 20 !default;
-$size-scale-xl         : 24 !default;
-$size-scale-2xl        : 32 !default;
+$size-scale-2xs: 10 !default;
+$size-scale-xs: 12 !default;
+$size-scale-sm: 14 !default;
+$size-scale-base: 16 !default;
+$size-scale-lg: 20 !default;
+$size-scale-xl: 24 !default;
+$size-scale-2xl: 32 !default;
 
 $sizes: (
-  "2xs"                : $size-scale-2xs,
-  "xs"                 : $size-scale-xs,
-  "sm"                 : $size-scale-sm,
-  "lg"                 : $size-scale-lg,
-  "xl"                 : $size-scale-xl,
-  "2xl"                : $size-scale-2xl
+  "2xs": $size-scale-2xs,
+  "xs": $size-scale-xs,
+  "sm": $size-scale-sm,
+  "lg": $size-scale-lg,
+  "xl": $size-scale-xl,
+  "2xl": $size-scale-2xl,
 ) !default;
 
-$li-width              : 2em !default;
-$li-margin             : calc($li-width * (5/4)) !default;
+$li-width: 2em !default;
+$li-margin: calc($li-width * (5 / 4)) !default;
 
-$pull-margin           : .3em !default;
+$pull-margin: 0.3em !default;
 
-$primary-opacity       : 1 !default;
-$secondary-opacity     : .4 !default;
+$primary-opacity: 1 !default;
+$secondary-opacity: 0.4 !default;
 
-$stack-vertical-align  : middle !default;
-$stack-width           : ($fw-width * 2) !default;
-$stack-z-index         : auto !default;
+$stack-vertical-align: middle !default;
+$stack-width: ($fw-width * 2) !default;
+$stack-z-index: auto !default;
 
 // web fonts-related variables
-$font-display          : block !default;
-$font-path             : "../webfonts" !default;
+$font-display: block !default;
+$font-path: "../webfonts" !default;
 
 // deprecated: these older SCSS variables will be removed with Font Awesome's next major release
-$style-family          : $family;
+$style-family: $family;
 
 $var-0: \30;
 $var-1: \31;
@@ -2863,7 +2863,8 @@ $icons: (
   "house-fire": $var-house-fire,
   "house-flag": $var-house-flag,
   "house-flood-water": $var-house-flood-water,
-  "house-flood-water-circle-arrow-right": $var-house-flood-water-circle-arrow-right,
+  "house-flood-water-circle-arrow-right":
+    $var-house-flood-water-circle-arrow-right,
   "house-lock": $var-house-lock,
   "house-medical-circle-check": $var-house-medical-circle-check,
   "house-medical-circle-exclamation": $var-house-medical-circle-exclamation,
@@ -2927,7 +2928,8 @@ $icons: (
   "person-shelter": $var-person-shelter,
   "person-walking-arrow-loop-left": $var-person-walking-arrow-loop-left,
   "person-walking-arrow-right": $var-person-walking-arrow-right,
-  "person-walking-dashed-line-arrow-right": $var-person-walking-dashed-line-arrow-right,
+  "person-walking-dashed-line-arrow-right":
+    $var-person-walking-dashed-line-arrow-right,
   "person-walking-luggage": $var-person-walking-luggage,
   "plane-circle-check": $var-plane-circle-check,
   "plane-circle-exclamation": $var-plane-circle-exclamation,
@@ -3686,9 +3688,11 @@ $icons: (
   "ear-listen": $var-ear-listen,
   "assistive-listening-systems": $var-assistive-listening-systems,
   "hands-asl-interpreting": $var-hands-asl-interpreting,
-  "american-sign-language-interpreting": $var-american-sign-language-interpreting,
+  "american-sign-language-interpreting":
+    $var-american-sign-language-interpreting,
   "asl-interpreting": $var-asl-interpreting,
-  "hands-american-sign-language-interpreting": $var-hands-american-sign-language-interpreting,
+  "hands-american-sign-language-interpreting":
+    $var-hands-american-sign-language-interpreting,
   "ear-deaf": $var-ear-deaf,
   "deaf": $var-deaf,
   "deafness": $var-deafness,
