@@ -1,6 +1,6 @@
 //  bordered icons
 // -------------------------
-@use 'variables' as v;
+@use "variables" as v;
 
 /* Heads Up: Bordered Icons will not be supported in the future!
   - This feature will be deprecated in the next major release of Font Awesome (v8)!
@@ -19,6 +19,9 @@
   border-radius: var(--#{v.$css-prefix}-border-radius, #{v.$border-radius});
   border-style: var(--#{v.$css-prefix}-border-style, #{v.$border-style});
   border-width: var(--#{v.$css-prefix}-border-width, #{v.$border-width});
-  box-sizing: var(--#{v.$css-prefix}-border-box-sizing, #{v.$border-box-sizing});
+  box-sizing: var(
+    --#{v.$css-prefix}-border-box-sizing,
+    #{v.$border-box-sizing}
+  );
   padding: var(--#{v.$css-prefix}-border-padding, #{v.$border-padding});
 }

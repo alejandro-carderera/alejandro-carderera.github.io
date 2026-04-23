@@ -36,7 +36,7 @@ nav_order: 3
 
 ---
 
-*Conditional Gradient Methods: From Core Principles to AI Applications* offers a definitive and modern treatment of one of the most elegant and versatile algorithmic families in optimization: the Frank–Wolfe method and its many variants. Originally proposed in the 1950s, these projection-free techniques have seen a powerful resurgence, now playing a central role in machine learning, signal processing, and large-scale data science.
+_Conditional Gradient Methods: From Core Principles to AI Applications_ offers a definitive and modern treatment of one of the most elegant and versatile algorithmic families in optimization: the Frank–Wolfe method and its many variants. Originally proposed in the 1950s, these projection-free techniques have seen a powerful resurgence, now playing a central role in machine learning, signal processing, and large-scale data science.
 
 This comprehensive monograph guides readers through the foundations of constrained optimization and into cutting-edge territory — including stochastic, online, and distributed settings — by uniting deep theoretical insights with practical considerations. It uses a clear narrative, rigorous proofs, and illuminating illustrations to demystify adaptive variants, away-steps, and the nuances of dealing with structured convex sets.
 

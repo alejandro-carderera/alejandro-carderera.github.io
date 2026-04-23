@@ -12,6 +12,6 @@ github: https://github.com/ZIB-IOL/CINDy
 
 The method improves on SINDy-style approaches by using a first-order Conditional Gradient algorithm that provides better sparsity induction, structure preservation, noise robustness, and sample efficiency.
 
-Published in the *Journal of Computational and Applied Mathematics* (2021).
+Published in the _Journal of Computational and Applied Mathematics_ (2021).
 
 [Paper](https://arxiv.org/abs/2101.02630) · [GitHub](https://github.com/ZIB-IOL/CINDy)
