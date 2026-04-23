@@ -11,10 +11,17 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Publications by Alejandro Carderera on convex optimization, conditional gradient methods, and machine learning.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-book",
+          title: "Book",
+          description: "A SIAM monograph on Frank-Wolfe algorithms for constrained optimization, machine learning, and large-scale data science.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/book/";
           },
         },{id: "nav-cv",
           title: "CV",
