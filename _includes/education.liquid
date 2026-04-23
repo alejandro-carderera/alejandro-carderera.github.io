@@ -1,0 +1,18 @@
+<div class="education">
+  {% assign cv = site.data.cv.cv %}
+  {% assign education = cv.sections['Education'] %}
+  {% for edu in education %}
+    <div class="education-item mb-3">
+      <div class="d-flex flex-column flex-sm-row justify-content-between">
+        <div>
+          <strong>{{ edu.studyType }} in {{ edu.area }}</strong>
+          <br>
+          <span class="text-muted">{{ edu.institution }}{% if edu.location != "" and edu.location != nil %} · {{ edu.location }}{% endif %}</span>
+        </div>
+        <div class="text-muted text-sm-right mt-1 mt-sm-0" style="white-space: nowrap;">
+          {{ edu.start_date }}–{{ edu.end_date }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

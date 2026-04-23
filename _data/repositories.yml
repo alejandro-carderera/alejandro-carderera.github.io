@@ -1,0 +1,10 @@
+github_users:
+  - alejandro-carderera
+
+repo_description_lines_max: 2
+
+github_repos:
+  - ZIB-IOL/FrankWolfe.jl
+  - ZIB-IOL/CINDy
+  - ZIB-IOL/SOCGS
+  - ZIB-IOL/FW-generalized-self-concordant

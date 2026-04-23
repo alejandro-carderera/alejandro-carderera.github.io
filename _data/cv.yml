@@ -1,0 +1,86 @@
+cv:
+  name: Alejandro Carderera
+  label: Staff Applied Researcher
+  email: alejandro.carderera@gmail.com
+  location: ""
+  image: ""
+  summary: Staff Applied Researcher at GitHub, working on Copilot.
+
+  social_networks:
+    - network: GitHub
+      username: alejandro-carderera
+    - network: LinkedIn
+      username: alejandro-carderera
+
+  sections:
+    Education:
+      - institution: Georgia Institute of Technology
+        location: Atlanta, USA
+        area: Machine Learning
+        studyType: Ph.D.
+        start_date: 2018
+        end_date: 2021
+
+      - institution: Cornell University
+        location: Ithaca, USA
+        area: Applied Physics
+        studyType: M.S.
+        start_date: 2014
+        end_date: 2016
+
+      - institution: Universidad Politécnica de Madrid
+        location: Madrid, Spain
+        area: Industrial Engineering
+        studyType: B.Sc.
+        start_date: 2010
+        end_date: 2014
+
+    Experience:
+      - company: GitHub
+        position: Staff Applied Researcher - Copilot
+        location: Atlanta, USA
+        start_date: 2024-08-01
+        end_date: ""
+        summary: "Applied research for GitHub Copilot. Promoted from Senior Applied Researcher in March 2026."
+
+      - company: Quantfury
+        position: Quantitative Researcher - ML for Algorithmic Trading
+        location: Atlanta, USA
+        start_date: 2022-01-17
+        end_date: 2024-07-31
+        summary: "Developed and deployed machine learning models for algorithmic trading strategies."
+
+      - company: J.P. Morgan
+        position: Quantitative Researcher - Summer Associate
+        location: New York, USA
+        start_date: 2020-07-06
+        end_date: 2021-08-20
+        date_display: "Summer 2020 & 2021"
+        summary: "Quantitative research internships in the corporate and investment banking division."
+
+      - company: HP
+        position: R&D Systems Engineer
+        location: Barcelona, Spain
+        start_date: 2016-08-01
+        end_date: 2018-07-01
+        summary: "Systems engineering in the Large Format Printing R&D division."
+
+      - company: Georgia Institute of Technology
+        position: Graduate Research Assistant
+        location: Atlanta, USA
+        start_date: 2018-08-01
+        end_date: 2021-12-31
+        summary: "Designed novel convex optimization algorithms with theoretical convergence guarantees and strong numerical performance. Published at NeurIPS, ICML, and AISTATS. Authored a SIAM book on Conditional Gradient Methods."
+
+      - company: Cornell University
+        position: Graduate Research Assistant
+        location: Ithaca, USA
+        start_date: 2015-07-01
+        end_date: 2016-07-01
+        summary: "Research in applied physics during M.S. program."
+
+    Interests:
+      - name: Convex Optimization
+      - name: Theoretical Machine Learning
+      - name: Causal Inference
+      - name: Statistical Estimation
