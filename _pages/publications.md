@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications by Alejandro Carderera on convex optimization, conditional gradient methods, and machine learning.
+description:
 nav: true
 nav_order: 2
 ---

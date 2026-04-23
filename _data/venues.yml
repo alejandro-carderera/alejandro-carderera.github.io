@@ -1,9 +1,31 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#7b2d8e"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICML":
+  url: https://icml.cc/
+  color: "#c0392b"
 
-"Vision":
-  color: "#009f36"
+"AISTATS":
+  url: https://aistats.org/
+  color: "#2980b9"
+
+"IJOC":
+  url: https://pubsonline.informs.org/journal/ijoc
+  color: "#27ae60"
+
+"JCAM":
+  url: https://www.sciencedirect.com/journal/journal-of-computational-and-applied-mathematics
+  color: "#e67e22"
+
+"Fields":
+  url: http://www.fields.utoronto.ca/
+  color: "#2c3e50"
+
+"SIAM":
+  url: https://www.siam.org/
+  color: "#003366"
+
+"OPT2019":
+  url: https://opt-ml.org/
+  color: "#8e44ad"
