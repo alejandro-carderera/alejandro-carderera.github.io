@@ -57,9 +57,7 @@ layout: default
     {% if page.announcements and page.announcements.enabled %}
       <hr class="mt-4 mb-4" style="border-top: 1px solid var(--global-divider-color)">
 
-      <h2 class="mt-3">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
+      <h2 class="mt-3">News</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
