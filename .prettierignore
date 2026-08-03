@@ -1,4 +1,8 @@
 _scripts/
 _site/
 node_modules/
+assets/js/bootstrap.bundle.min.js
+assets/js/distillpub/template.v2.js
+assets/js/distillpub/transforms.v2.js
 assets/js/search/
+assets/js/tikzjax.min.js
