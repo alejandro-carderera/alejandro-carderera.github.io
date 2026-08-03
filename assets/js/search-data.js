@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "",
+          description: "Research publications on conditional gradient methods, convex optimization, machine learning, and scientific computing.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "",
+          description: "Curriculum vitae of Alejandro Carderera, Staff Applied Researcher at GitHub.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
