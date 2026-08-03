@@ -1,23 +1,11 @@
 name: Axe accessibility testing
 
 on:
-  # if you want to run this on every push uncomment the following lines
-  # push:
-  #   branches:
-  #     - master
-  #     - main
-  # pull_request:
-  #   branches:
-  #     - master
-  #     - main
+  pull_request:
+    branches:
+      - master
+      - main
   workflow_dispatch:
-    inputs:
-      url:
-        description: "URL to be checked (e.g.: blog/)"
-        required: false
-
-env:
-  URL: ""
 
 jobs:
   check:
@@ -29,7 +17,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: "3.3.5"
           bundler-cache: true
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
@@ -71,4 +59,17 @@ jobs:
           npm install -g @axe-core/cli
           npm install -g http-server
           http-server _site/ &
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:8080/${{ github.event.inputs.url || env.URL }} --load-delay=1500 --exit
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://localhost:8080/ > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl --fail --silent http://localhost:8080/ > /dev/null
+          for path in "" "publications/" "book/"; do
+            axe \
+              --chromedriver-path "$(npm root -g)/chromedriver/bin/chromedriver" \
+              "http://localhost:8080/${path}" \
+              --load-delay=1500 \
+              --exit
+          done

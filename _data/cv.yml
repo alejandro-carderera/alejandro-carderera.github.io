@@ -4,7 +4,7 @@ cv:
   email: alejandro.carderera@gmail.com
   location: ""
   image: ""
-  summary: Staff Applied Researcher at GitHub, working on Copilot.
+  summary: Staff Applied Researcher at GitHub, leading applied research for Copilot Code Review.
 
   social_networks:
     - network: GitHub
@@ -41,14 +41,14 @@ cv:
         location: Atlanta, USA
         start_date: 2024-08-01
         end_date: ""
-        summary: "Applied research for GitHub Copilot. Promoted from Senior Applied Researcher in March 2026."
+        summary: "Lead applied research for Copilot Code Review, translating evaluation and experimentation into production improvements across comment quality, coverage, context use, and system efficiency."
 
       - company: Quantfury
         position: Quantitative Researcher - ML for Algorithmic Trading
         location: Atlanta, USA
         start_date: 2022-01-17
         end_date: 2024-07-31
-        summary: "Developed and deployed machine learning models for algorithmic trading strategies."
+        summary: "Designed and deployed machine-learning trading strategies, reusable backtesting infrastructure, and low-latency production data pipelines."
 
       - company: J.P. Morgan
         position: Quantitative Researcher - Summer Associate
@@ -56,14 +56,14 @@ cv:
         start_date: 2020-07-06
         end_date: 2021-08-20
         date_display: "Summer 2020 & 2021"
-        summary: "Quantitative research internships in the corporate and investment banking division."
+        summary: "Developed capital-allocation and deposit-pricing models, including a stochastic pricing system that improved both speed and predictive accuracy."
 
       - company: HP
         position: R&D Systems Engineer
         location: Barcelona, Spain
         start_date: 2016-08-01
         end_date: 2018-07-01
-        summary: "Systems engineering in the Large Format Printing R&D division."
+        summary: "Built computer-vision and data-analysis tools to automate product-quality grading and improve engineering processes."
 
       - company: Georgia Institute of Technology
         position: Graduate Research Assistant

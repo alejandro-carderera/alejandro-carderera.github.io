@@ -12,7 +12,7 @@ nav_order: 3
 
 <div class="d-flex flex-column flex-md-row align-items-start mb-4">
   <div class="flex-shrink-0 mr-md-4 mb-3 mb-md-0 text-center">
-    <img src="{{ '/assets/img/publication_preview/cover_book.jpg' | relative_url }}" alt="Conditional Gradient Methods book cover" class="img-fluid rounded" style="max-width: 200px; box-shadow: 0 2px 12px rgba(0,0,0,0.1);">
+    <img src="{{ '/assets/img/publication_preview/cover_book.jpg' | relative_url }}" width="360" height="520" alt="Conditional Gradient Methods book cover" class="img-fluid rounded" style="max-width: 200px; height: auto; box-shadow: 0 2px 12px rgba(0,0,0,0.1);">
   </div>
   <div>
     <p style="color: var(--global-text-color-light); margin-bottom: 0.25rem; font-size: 0.9rem;">MOS-SIAM Series on Optimization · 2025</p>
@@ -26,10 +26,10 @@ nav_order: 3
       <a href="https://www.pokutta.com/">S. Pokutta</a>
     </p>
     <div class="mb-3">
-      <a href="https://epubs.siam.org/doi/book/10.1137/1.9781611978568" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">SIAM</a>
-      <a href="https://arxiv.org/abs/2211.14103" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">arXiv</a>
-      <a href="https://arxiv.org/pdf/2211.14103" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">PDF</a>
-      <a href="https://github.com/ZIB-IOL/FrankWolfe.jl" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color);">Code</a>
+      <a href="https://epubs.siam.org/doi/book/10.1137/1.9781611978568" class="btn btn-sm z-depth-0" role="button" style="background-color: var(--global-theme-color); border: 1px solid var(--global-theme-color); color: white; margin-right: 0.25rem;">Buy from SIAM</a>
+      <a href="https://arxiv.org/abs/2211.14103" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">Read free on arXiv</a>
+      <a href="https://arxiv.org/pdf/2211.14103" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">Download PDF</a>
+      <a href="https://github.com/ZIB-IOL/FrankWolfe.jl" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color);">Explore FrankWolfe.jl</a>
     </div>
   </div>
 </div>
@@ -41,6 +41,14 @@ _Conditional Gradient Methods: From Core Principles to AI Applications_ offers a
 This comprehensive monograph guides readers through the foundations of constrained optimization and into cutting-edge territory — including stochastic, online, and distributed settings — by uniting deep theoretical insights with practical considerations. It uses a clear narrative, rigorous proofs, and illuminating illustrations to demystify adaptive variants, away-steps, and the nuances of dealing with structured convex sets.
 
 Most of the algorithms in the book are implemented in the [FrankWolfe.jl](https://github.com/ZIB-IOL/FrankWolfe.jl) Julia package.
+
+## Contents
+
+1. Introduction
+2. Basics of Frank–Wolfe algorithms
+3. Improvements and generalizations of Frank–Wolfe algorithms
+4. Conditional gradients in the large-scale setting
+5. Miscellaneous
 
 ## Endorsements
 
@@ -55,3 +63,16 @@ Most of the algorithms in the book are implemented in the [FrankWolfe.jl](https:
 ## Audience
 
 This book is intended for optimization researchers and theorists, machine learning methodologists, and algorithm designers. Graduate students in those areas will also find it of interest.
+
+## Citation
+
+```bibtex
+@book{braun2025conditional,
+  title     = {Conditional Gradient Methods: From Core Principles to AI Applications},
+  author    = {Braun, Gábor and Carderera, Alejandro and Combettes, Cyrille W. and
+               Hassani, Hamed and Karbasi, Amin and Mokhtari, Aryan and Pokutta, Sebastian},
+  publisher = {Society for Industrial and Applied Mathematics},
+  year      = {2025},
+  doi       = {10.1137/1.9781611978568}
+}
+```

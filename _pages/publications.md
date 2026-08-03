@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description:
+description: Research publications on conditional gradient methods, convex optimization, machine learning, and scientific computing.
 nav: true
 nav_order: 2
 ---
