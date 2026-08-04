@@ -1,21 +1,42 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
-  $("a.bibtex").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+  document.querySelectorAll("[data-publication-toggle]").forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const entry = toggle.closest(".publication-entry");
+      const target = document.getElementById(
+        toggle.getAttribute("aria-controls"),
+      );
+
+      if (!entry || !target) {
+        console.error(
+          "Publication disclosure is missing its entry or controlled region.",
+        );
+        return;
+      }
+
+      const shouldOpen = toggle.getAttribute("aria-expanded") !== "true";
+
+      entry
+        .querySelectorAll("[data-publication-toggle]")
+        .forEach((entryToggle) => {
+          entryToggle.setAttribute("aria-expanded", "false");
+        });
+      entry.querySelectorAll(".publication-details").forEach((panel) => {
+        panel.classList.remove("open");
+        panel.hidden = true;
+      });
+
+      if (shouldOpen) {
+        toggle.setAttribute("aria-expanded", "true");
+        target.hidden = false;
+        target.classList.add("open");
+      }
+    });
   });
   $("a").removeClass("waves-effect waves-light");
+
+  document.querySelectorAll("pre").forEach((codeBlock) => {
+    codeBlock.setAttribute("tabindex", "0");
+  });
 
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
