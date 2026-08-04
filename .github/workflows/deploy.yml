@@ -15,6 +15,7 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "bin/fingerprint_css.rb"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -44,6 +45,7 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "bin/fingerprint_css.rb"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -82,7 +84,7 @@ jobs:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
       - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
+        uses: fjogeleit/yaml-update-action@dffe9a5223d84653c13374032382f6bb5de8e5ef # v0.17.0
         with:
           commitChange: false
           valueFile: "_config.yml"
@@ -98,6 +100,8 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Fingerprint CSS 🔖
+        run: ruby bin/fingerprint_css.rb
       - name: Check local links 🔗
         uses: lycheeverse/lychee-action@v2.0.2
         with:

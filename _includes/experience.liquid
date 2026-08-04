@@ -1,6 +1,6 @@
 <div class="experience">
   {% assign cv = site.data.cv.cv %}
-  {% assign experiences = cv.sections['Experience'] %}
+  {% assign experiences = cv.sections.Experience %}
   {% if include.limit %}
     {% assign exp_limit = include.limit %}
   {% else %}
@@ -12,13 +12,28 @@
         <div>
           <strong>{{ exp.position }}</strong>
           <br>
-          <span class="text-muted">{{ exp.company }}{% if exp.location != "" and exp.location != nil %} · {{ exp.location }}{% endif %}</span>
+          <span class="text-muted">
+            {{- exp.company -}}
+            {%- if exp.location != '' and exp.location != null %} · {{ exp.location }}{% endif -%}
+          </span>
         </div>
-        <div class="text-muted text-sm-right mt-1 mt-sm-0" style="white-space: nowrap; font-variant-numeric: tabular-nums;">
-          {% if exp.date_display %}{{ exp.date_display }}{% else %}{{ exp.start_date | date: '%Y' }}–{% if exp.end_date == "" or exp.end_date == nil %}Present{% else %}{{ exp.end_date | date: '%Y' }}{% endif %}{% endif %}
+        <div
+          class="text-muted text-sm-right mt-1 mt-sm-0"
+          style="white-space: nowrap; font-variant-numeric: tabular-nums;"
+        >
+          {% if exp.date_display -%}
+            {{- exp.date_display -}}
+          {%- else -%}
+            {{- exp.start_date | date: '%Y' }}–
+            {%- if exp.end_date == 'present' or exp.end_date == '' or exp.end_date == null -%}
+              Present
+            {%- else -%}
+              {{- exp.end_date | date: '%Y' -}}
+            {%- endif -%}
+          {%- endif %}
         </div>
       </div>
-      {% if exp.summary != "" and exp.summary != nil %}
+      {% if exp.summary != '' and exp.summary != null %}
         <p class="experience-summary mb-0">{{ exp.summary }}</p>
       {% endif %}
     </div>

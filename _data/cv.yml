@@ -1,10 +1,8 @@
 cv:
   name: Alejandro Carderera
-  label: Staff Applied Researcher
+  headline: Staff Applied Researcher
   email: alejandro.carderera@gmail.com
   location: ""
-  image: ""
-  summary: Staff Applied Researcher at GitHub, leading applied research for Copilot Code Review.
 
   social_networks:
     - network: GitHub
@@ -40,7 +38,7 @@ cv:
         position: Staff Applied Researcher - Copilot
         location: Atlanta, USA
         start_date: 2024-08-01
-        end_date: ""
+        end_date: present
         summary: "Lead applied research for Copilot Code Review, translating evaluation and experimentation into production improvements across comment quality, coverage, context use, and system efficiency."
 
       - company: Quantfury

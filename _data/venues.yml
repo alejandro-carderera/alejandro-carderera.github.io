@@ -1,31 +1,39 @@
 "NeurIPS":
   url: https://neurips.cc/
   color: "#7b2d8e"
+  text_color: "#ffffff"
 
 "ICML":
   url: https://icml.cc/
   color: "#c0392b"
+  text_color: "#ffffff"
 
 "AISTATS":
   url: https://aistats.org/
   color: "#2980b9"
+  text_color: "#000000"
 
 "IJOC":
   url: https://pubsonline.informs.org/journal/ijoc
   color: "#27ae60"
+  text_color: "#000000"
 
 "JCAM":
   url: https://www.sciencedirect.com/journal/journal-of-computational-and-applied-mathematics
   color: "#e67e22"
+  text_color: "#000000"
 
 "Fields":
   url: http://www.fields.utoronto.ca/
   color: "#2c3e50"
+  text_color: "#ffffff"
 
 "SIAM":
   url: https://www.siam.org/
   color: "#003366"
+  text_color: "#ffffff"
 
 "OPT2019":
   url: https://opt-ml.org/
   color: "#8e44ad"
+  text_color: "#ffffff"

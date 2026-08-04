@@ -49,6 +49,10 @@ table.table a {
   }
 }
 
+.text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {

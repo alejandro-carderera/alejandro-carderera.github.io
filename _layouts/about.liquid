@@ -21,7 +21,8 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes="220px" alt="Alejandro Carderera"
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class
+            sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 929px) calc(30vw - 9px), 270px" alt="Alejandro Carderera"
             width=1140 height=1140 cache_bust=true
           %}
         {% endif %}

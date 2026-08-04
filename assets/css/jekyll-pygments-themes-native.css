@@ -125,7 +125,7 @@
   color: #24909d;
 } /* Name.Builtin */
 .highlight .nc {
-  color: #447fcf;
+  color: #7eb6ff;
   text-decoration: underline;
 } /* Name.Class */
 .highlight .no {
@@ -141,13 +141,13 @@
   color: #bbbbbb;
 } /* Name.Exception */
 .highlight .nf {
-  color: #447fcf;
+  color: #7eb6ff;
 } /* Name.Function */
 .highlight .nl {
   color: #d0d0d0;
 } /* Name.Label */
 .highlight .nn {
-  color: #447fcf;
+  color: #7eb6ff;
   text-decoration: underline;
 } /* Name.Namespace */
 .highlight .nx {

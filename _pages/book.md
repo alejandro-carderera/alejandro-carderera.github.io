@@ -3,6 +3,7 @@ layout: page
 title: Book
 description: A SIAM monograph on Frank-Wolfe algorithms for constrained optimization, machine learning, and large-scale data science.
 img: assets/img/publication_preview/cover_book.jpg
+og_image: /assets/img/publication_preview/cover_book.jpg
 importance: 0
 category:
 permalink: /book/
@@ -26,21 +27,20 @@ nav_order: 3
       <a href="https://www.pokutta.com/">S. Pokutta</a>
     </p>
     <div class="mb-3">
-      <a href="https://epubs.siam.org/doi/book/10.1137/1.9781611978568" class="btn btn-sm z-depth-0" role="button" style="background-color: var(--global-theme-color); border: 1px solid var(--global-theme-color); color: white; margin-right: 0.25rem;">Buy from SIAM</a>
+      <a href="https://epubs.siam.org/doi/book/10.1137/1.9781611978568" class="btn btn-sm z-depth-0" role="button" style="background-color: var(--global-theme-color); border: 1px solid var(--global-theme-color); color: var(--global-theme-contrast-color); margin-right: 0.25rem;">Buy from SIAM</a>
       <a href="https://arxiv.org/abs/2211.14103" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">Read free on arXiv</a>
-      <a href="https://arxiv.org/pdf/2211.14103" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color); margin-right: 0.25rem;">Download PDF</a>
-      <a href="https://github.com/ZIB-IOL/FrankWolfe.jl" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color);">Explore FrankWolfe.jl</a>
+      <a href="https://github.com/ZIB-IOL/FrankWolfe-book-code" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-divider-color);">View book code</a>
     </div>
   </div>
 </div>
 
 ---
 
-_Conditional Gradient Methods: From Core Principles to AI Applications_ offers a definitive and modern treatment of one of the most elegant and versatile algorithmic families in optimization: the Frank–Wolfe method and its many variants. Originally proposed in the 1950s, these projection-free techniques have seen a powerful resurgence, now playing a central role in machine learning, signal processing, and large-scale data science.
+Conditional Gradient Methods: From Core Principles to AI Applications offers a definitive and modern treatment of one of the most elegant and versatile algorithmic families in optimization: the Frank–Wolfe method and its many variants. Originally proposed in the 1950s, these projection-free techniques have seen a powerful resurgence, now playing a central role in machine learning, signal processing, and large-scale data science.
 
 This comprehensive monograph guides readers through the foundations of constrained optimization and into cutting-edge territory — including stochastic, online, and distributed settings — by uniting deep theoretical insights with practical considerations. It uses a clear narrative, rigorous proofs, and illuminating illustrations to demystify adaptive variants, away-steps, and the nuances of dealing with structured convex sets.
 
-Most of the algorithms in the book are implemented in the [FrankWolfe.jl](https://github.com/ZIB-IOL/FrankWolfe.jl) Julia package.
+Code accompanying the book is available in the [FrankWolfe book repository](https://github.com/ZIB-IOL/FrankWolfe-book-code).
 
 ## Contents
 
