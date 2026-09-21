@@ -1539,11 +1539,6 @@ a.close.disabled {
 .rounded {
   border-radius: 0.25rem !important;
 }
-.clearfix::after {
-  display: block;
-  clear: both;
-  content: "";
-}
 .d-flex {
   display: -ms-flexbox !important;
   display: flex !important;
