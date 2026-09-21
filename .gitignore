@@ -4,6 +4,7 @@ _site
 .idea
 .jekyll-cache
 .jekyll-metadata
+.impeccable/hook.cache.json
 .ruby-version
 .sass-cache
 .tweet-cache

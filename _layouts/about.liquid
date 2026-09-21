@@ -22,7 +22,7 @@ layout: default
           {% endif %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class
-            sizes="(max-width: 575px) calc(100vw - 30px), (max-width: 929px) calc(30vw - 9px), 270px" alt="Alejandro Carderera"
+            sizes="(max-width: 575px) 132px, (max-width: 929px) calc(30vw - 9px), 270px" alt="Alejandro Carderera"
             width=1140 height=1140 cache_bust=true
           %}
         {% endif %}
@@ -40,15 +40,15 @@ layout: default
   </header>
 
   <article>
-    <div class="clearfix" style="text-align: justify">{{ content }}</div>
+    <div class="clearfix about-intro">{{ content }}</div>
 
-    <hr class="mt-4 mb-4" style="border-top: 1px solid var(--global-divider-color)">
+    <hr class="section-divider">
 
     <!-- Professional Experience -->
     <h2 class="mt-3">Professional Experience</h2>
     {% include experience.liquid limit=4 %}
 
-    <hr class="mt-4 mb-4" style="border-top: 1px solid var(--global-divider-color)">
+    <hr class="section-divider">
 
     <!-- Education -->
     <h2 class="mt-3">Education</h2>
@@ -56,7 +56,7 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <hr class="mt-4 mb-4" style="border-top: 1px solid var(--global-divider-color)">
+      <hr class="section-divider">
 
       <h2 class="mt-3">News</h2>
       {% include news.liquid limit=true %}
@@ -64,7 +64,7 @@ layout: default
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <hr class="mt-4 mb-4" style="border-top: 1px solid var(--global-divider-color)">
+      <hr class="section-divider">
 
       <h2 class="mt-3">
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
@@ -74,12 +74,15 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <hr class="mt-4 mb-4" style="border-top: 1px solid var(--global-divider-color)">
+      <hr class="section-divider">
 
       <h2 class="mt-3">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
-      {% include selected_papers.liquid %}
+      <div class="selected-publications">
+        {% include selected_papers.liquid %}
+        <a class="selected-publications-all" href="{{ '/publications/' | relative_url }}">View all publications</a>
+      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}

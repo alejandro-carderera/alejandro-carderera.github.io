@@ -194,7 +194,69 @@
     </div>
 
     <!-- Links/Buttons -->
-    <div class="links">
+    {% assign distill_publication_links = false %}
+    {% assign primary_resource = '' %}
+    {% if page.permalink == '/' %}
+      {% assign distill_publication_links = true %}
+      {% if entry.pdf %}
+        {% assign primary_resource = 'pdf' %}
+      {% elsif entry.html %}
+        {% assign primary_resource = 'html' %}
+      {% elsif entry.doi %}
+        {% assign primary_resource = 'doi' %}
+      {% elsif entry.arxiv %}
+        {% assign primary_resource = 'arxiv' %}
+      {% elsif entry.website %}
+        {% assign primary_resource = 'website' %}
+      {% endif %}
+    {% endif %}
+
+    <div class="links{% if distill_publication_links %} links-distilled{% endif %}">
+      {% if primary_resource == 'pdf' %}
+        {% if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}" class="publication-primary btn btn-sm z-depth-0" role="button">Read PDF</a>
+        {% else %}
+          <a
+            href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"
+            class="publication-primary btn btn-sm z-depth-0"
+            role="button"
+            >Read PDF</a
+          >
+        {% endif %}
+      {% elsif primary_resource == 'html' %}
+        {% if entry.html contains '://' %}
+          <a href="{{ entry.html }}" class="publication-primary btn btn-sm z-depth-0" role="button">Read online</a>
+        {% else %}
+          <a
+            href="{{ entry.html | prepend: '/assets/html/' | relative_url }}"
+            class="publication-primary btn btn-sm z-depth-0"
+            role="button"
+            >Read online</a
+          >
+        {% endif %}
+      {% elsif primary_resource == 'doi' %}
+        <a
+          href="https://doi.org/{{ entry.doi }}"
+          class="publication-primary btn btn-sm z-depth-0"
+          role="button"
+          >View publication</a
+        >
+      {% elsif primary_resource == 'arxiv' %}
+        <a
+          href="http://arxiv.org/abs/{{ entry.arxiv }}"
+          class="publication-primary btn btn-sm z-depth-0"
+          role="button"
+          >Read preprint</a
+        >
+      {% elsif primary_resource == 'website' %}
+        <a href="{{ entry.website }}" class="publication-primary btn btn-sm z-depth-0" role="button">Visit project</a>
+      {% endif %}
+
+      {% if distill_publication_links %}
+        <details class="publication-resources">
+          <summary>More resources</summary>
+          <div class="publication-secondary-links">
+      {% endif %}
       {% if entry.award %}
         <button
           id="publication-{{ entry.key }}-award-toggle"
@@ -219,10 +281,10 @@
           Abstract
         </button>
       {% endif %}
-      {% if entry.doi %}
+      {% if entry.doi and primary_resource != 'doi' %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
-      {% if entry.arxiv %}
+      {% if entry.arxiv and primary_resource != 'arxiv' %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.hal %}
@@ -240,7 +302,7 @@
           BibTeX
         </button>
       {% endif %}
-      {% if entry.html %}
+      {% if entry.html and primary_resource != 'html' %}
         {% if entry.html contains '://' %}
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% else %}
@@ -252,7 +314,7 @@
           >
         {% endif %}
       {% endif %}
-      {% if entry.pdf %}
+      {% if entry.pdf and primary_resource != 'pdf' %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% else %}
@@ -314,8 +376,12 @@
           >
         {% endif %}
       {% endif %}
-      {% if entry.website %}
+      {% if entry.website and primary_resource != 'website' %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if distill_publication_links %}
+        </div>
+        </details>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

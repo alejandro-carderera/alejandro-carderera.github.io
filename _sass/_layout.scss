@@ -89,6 +89,13 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
+@media (max-width: 575.98px) {
+  .container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+
 // Profile
 .profile {
   width: 220px;
