@@ -2,15 +2,19 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
+  <header class="post-header about-hero">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        <span class="about-hero__given-name font-weight-bold">{{ site.first_name }}</span>
+        {% if site.middle_name != blank %}
+          <span class="about-hero__middle-name">{{ site.middle_name }}</span>
+        {% endif %}
+        <span class="about-hero__family-name">{{ site.last_name }}</span>
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
+    <p class="desc">{{ page.subtitle }}</p>
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -36,12 +40,10 @@ layout: default
         {% endif %}
       </div>
     {% endif %}
-    <p class="desc">{{ page.subtitle }}</p>
+    <div class="about-intro">{{ content }}</div>
   </header>
 
   <article>
-    <div class="clearfix about-intro">{{ content }}</div>
-
     <hr class="section-divider">
 
     <!-- Professional Experience -->

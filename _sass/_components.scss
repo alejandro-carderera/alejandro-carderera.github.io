@@ -158,6 +158,95 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 30%;
+  grid-template-areas:
+    "heading heading"
+    "role portrait"
+    "intro portrait";
+  column-gap: 2rem;
+  align-items: start;
+  margin-bottom: 0;
+
+  .post-title {
+    grid-area: heading;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.14em;
+    min-width: 0;
+    margin: 0;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    font-size: clamp(3.5rem, 6.4vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+  }
+
+  .about-hero__middle-name,
+  .about-hero__family-name {
+    font-weight: 300;
+  }
+
+  .desc {
+    grid-area: role;
+    min-width: 0;
+    max-width: 30rem;
+    margin: 1.25rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: -0.015em;
+  }
+
+  .profile,
+  .profile.float-left,
+  .profile.float-right {
+    grid-area: portrait;
+    float: none;
+    width: 100%;
+    margin: 1.25rem 0 0;
+
+    figure {
+      margin: 0;
+    }
+  }
+
+  .about-intro {
+    grid-area: intro;
+    min-width: 0;
+    max-width: 36rem;
+    margin-top: 1.75rem;
+    line-height: 1.75;
+
+    p:first-child {
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.65;
+    }
+
+    p + p {
+      color: var(--global-text-color-light);
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 930px) {
+  .about-hero {
+    column-gap: 3.375rem;
+
+    .desc {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 .post article > h2,
 .post article > h2 a {
   letter-spacing: -0.025em;
@@ -224,29 +313,38 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media (max-width: 575.98px) {
-  .post-header {
-    display: grid;
+  .post-header.about-hero {
     grid-template-columns: minmax(0, 1fr) 8.25rem;
+    grid-template-areas:
+      "heading heading"
+      "role portrait"
+      "intro intro";
     column-gap: 1rem;
-    align-items: start;
+    row-gap: 1.25rem;
 
     .post-title {
-      grid-column: 1 / -1;
-      margin-bottom: 1rem;
-      font-size: clamp(2rem, 10vw, 2.5rem);
-      line-height: 1.08;
+      display: block;
+      padding-bottom: 1rem;
+      font-size: clamp(2.5rem, 11.5vw, 3.25rem);
+      line-height: 0.98;
+    }
+
+    .about-hero__given-name,
+    .about-hero__middle-name,
+    .about-hero__family-name {
+      display: block;
     }
 
     .desc {
-      grid-column: 1;
-      grid-row: 2;
       margin: 0;
       align-self: center;
+      font-size: 1rem;
+      line-height: 1.55;
     }
 
-    .profile {
-      grid-column: 2;
-      grid-row: 2;
+    .profile,
+    .profile.float-left,
+    .profile.float-right {
       float: none !important;
       width: 8.25rem;
       margin: 0 !important;
@@ -255,16 +353,18 @@ ul.task-list input[type="checkbox"] {
         display: none;
       }
     }
-  }
 
-  .post article {
-    clear: both;
-    margin-top: 1.25rem;
-  }
+    .about-intro {
+      max-width: none;
+      margin-top: 0.25rem;
+      line-height: 1.65;
 
-  .about-intro {
-    max-width: none;
-    line-height: 1.65;
+      p:first-child {
+        margin-bottom: 1.4rem;
+        font-size: 1.0625rem;
+        line-height: 1.65;
+      }
+    }
   }
 
   .section-divider {
