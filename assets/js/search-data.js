@@ -55,13 +55,6 @@ ninja.data = [{
           title: 'Promoted to Staff Applied Researcher at GitHub Copilot.',
           description: "",
           section: "News",},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/cv.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
