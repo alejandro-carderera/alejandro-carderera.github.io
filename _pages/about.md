@@ -12,10 +12,24 @@ profile:
 selected_papers: true
 social: false
 
+featured_work:
+  enabled: true
+  title: ReviewBench
+  subtitle: Open benchmark for AI code review
+  description: I helped develop ReviewBench at GitHub, an open and reproducible benchmark for evaluating AI code review agents. Its offline results have consistently anticipated the direction of later Copilot code review production experiments.
+  url: https://review-bench.ai/
+  announcement_url: https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/
+  facts:
+    - value: "219"
+      label: public pull requests
+    - value: "19"
+      label: languages
+    - value: "96.6%"
+      label: independent audit agreement
+
 announcements:
   enabled: true
   scrollable: true
-  limit: 8
 
 latest_posts:
   enabled: false

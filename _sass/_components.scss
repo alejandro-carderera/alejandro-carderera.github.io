@@ -258,6 +258,97 @@ ul.task-list input[type="checkbox"] {
   border-top-color: var(--global-divider-color);
 }
 
+.featured-work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem;
+  gap: 2.75rem;
+  align-items: start;
+}
+
+.featured-work__title {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.featured-work__subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.featured-work__summary {
+  max-width: 37rem;
+  margin: 1.2rem 0 0;
+  line-height: 1.7;
+}
+
+.featured-work__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin-top: 1rem;
+
+  a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 600;
+    text-underline-offset: 0.2em;
+
+    i {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.featured-work__facts {
+  margin: 0.2rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  strong {
+    min-width: 3.6rem;
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.35;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+}
+
 .news {
   .table {
     margin-bottom: 0;
@@ -370,6 +461,29 @@ ul.task-list input[type="checkbox"] {
   .section-divider {
     margin-top: 1.75rem;
     margin-bottom: 1.35rem;
+  }
+
+  .featured-work {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .featured-work__title {
+    font-size: 1.75rem;
+  }
+
+  .featured-work__summary {
+    margin-top: 1rem;
+    line-height: 1.65;
+  }
+
+  .featured-work__links {
+    margin-top: 0.8rem;
+  }
+
+  .featured-work__facts {
+    margin-top: 0;
+    border-bottom: 0;
   }
 
   .experience-item,

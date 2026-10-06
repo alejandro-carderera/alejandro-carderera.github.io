@@ -46,6 +46,38 @@ layout: default
   <article>
     <hr class="section-divider">
 
+    {% if page.featured_work and page.featured_work.enabled %}
+      <section class="featured-work" aria-labelledby="featured-work-title">
+        <div class="featured-work__content">
+          <h2 id="featured-work-title" class="featured-work__title">
+            <a href="{{ page.featured_work.url }}">{{ page.featured_work.title }}</a>
+          </h2>
+          <p class="featured-work__subtitle">{{ page.featured_work.subtitle }}</p>
+          <p class="featured-work__summary">{{ page.featured_work.description }}</p>
+          <div class="featured-work__links">
+            <a href="{{ page.featured_work.url }}">
+              Explore the benchmark
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+            <a href="{{ page.featured_work.announcement_url }}">
+              Read the launch post
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="featured-work__facts" aria-label="ReviewBench benchmark facts">
+          {% for fact in page.featured_work.facts %}
+            <li>
+              <strong>{{ fact.value }}</strong>
+              <span>{{ fact.label }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <hr class="section-divider">
+    {% endif %}
+
     <!-- Professional Experience -->
     <h2 class="mt-3">Professional Experience</h2>
     {% include experience.liquid limit=4 %}
