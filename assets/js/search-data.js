@@ -57,6 +57,9 @@ ninja.data = [{
           section: "News",},{id: "news-helped-launch-reviewbench-an-open-benchmark-for-ai-code-review-agents-read-the-launch-post",
           title: 'Helped launch ReviewBench, an open benchmark for AI code review agents. Read the...',
           description: "",
+          section: "News",},{id: "news-spoke-at-github-universe-2026-with-cooper-nederhood-on-how-github-taught-copilot-to-remember-and-when-to-forget-we-discussed-how-coding-agents-can-learn-across-tasks-and-why-retaining-more-context-can-sometimes-hurt-performance-view-slides",
+          title: 'Spoke at GitHub Universe 2026 with Cooper Nederhood on “How GitHub taught Copilot...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
